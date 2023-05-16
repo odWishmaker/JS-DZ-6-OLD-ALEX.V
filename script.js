@@ -56,12 +56,13 @@ let whoMore
 for (let i = 0; i < somePersons.length; i++) {
   if (somePersons[i].gender === 'male') {
     genderMale++;
-    totalAge += currentYear - somePersons[i].birthday;
   }
 
   if (somePersons[i].gender === 'female') {
     genderFemale++;
   }
+
+  totalAge += currentYear - somePersons[i].birthday;
 }
 
 if (genderMale > genderFemale) {
@@ -77,9 +78,8 @@ if (genderMale == genderFemale) {
 }
 
 console.log('ДЗ 17. массив объектов')
-console.log('Average age: ' + totalAge / somePersons.length);
+console.log('Average age: ' + totalAge / somePersons.length );
 console.log('Which gender is more: ' + whoMore);
-
 
 // ДЗ 18. Сортировка
 // Написать функцию которая сортирует слова в строке по цифре которая
