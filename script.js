@@ -51,6 +51,7 @@ let currentYear = new Date().getFullYear();
 let totalAge = 0;
 let genderMale = 0;
 let genderFemale = 0;
+let whoMore
 
 for (let i = 0; i < somePersons.length; i++) {
   if (somePersons[i].gender === 'male') {
@@ -71,7 +72,7 @@ if (genderMale < genderFemale) {
   whoMore = 'Female';
 }
 
-else {
+if (genderMale == genderFemale) {
   whoMore = 'Both'
 }
 
