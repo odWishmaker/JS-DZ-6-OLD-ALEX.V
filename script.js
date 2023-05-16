@@ -78,7 +78,7 @@ if (genderMale == genderFemale) {
 }
 
 console.log('ДЗ 17. массив объектов')
-console.log('Average age: ' + totalAge / somePersons.length );
+console.log('Average age: ' + Math.round(totalAge / somePersons.length) );
 console.log('Which gender is more: ' + whoMore);
 
 // ДЗ 18. Сортировка
